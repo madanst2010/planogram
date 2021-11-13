@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 import pymysql
 pymysql.install_as_MySQLdb()
@@ -56,6 +57,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'planogram.urls'
 
+STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
