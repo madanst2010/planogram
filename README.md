@@ -11,10 +11,10 @@ virtualenv myenv
 #activate virtual env:
 myenv\Scripts\activate
 
-#go to project dir
+#go to project dir:
 cd planogram
 
-#install requirements
+#install requirements:
 pip install -r requirements.txt
 
 #goto frontend application :
